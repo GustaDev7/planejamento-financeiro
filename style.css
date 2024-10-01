@@ -1,0 +1,128 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f4f8; /* Azul Claro Desaturado */
+}
+  
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+  
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+  
+form {
+    margin-bottom: 20px;
+}
+  
+label {
+    font-size: 16px;
+    color: #555;
+}
+  
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+  
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #00796b;
+    outline: none;
+}
+  
+button.add-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+button.add-btn:hover {
+    background-color: #004d40;
+}
+  
+table {
+    width: 100%;
+    margin-bottom: 20px; /* Espaço abaixo da tabela */
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+  
+table, th, td {
+    border: 1px solid #ddd;
+}
+  
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+  
+th {
+    background-color: #00796b;
+    color: white;
+    font-weight: normal;
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.totals {
+    font-weight: bold;
+    color: #333;
+}
+  
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0f7fa;
+    border-left: 4px solid #00796b;
+    border-radius: 4px;
+    font-size: 18px;
+}
+  
+@media (max-width: 768px) {
+    .container {
+        margin-top: auto;
+        padding: 15px;
+    }
+  
+    button.add-btn {
+        font-size: 14px;
+    }
+  
+    th, td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Financeiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tabela de Receitas, Despesas e Investimentos</h1>
+
+    <form id="finance-form">
+      <label for="description">Descrição:</label><br>
+      <input type="text" id="description" name="description" required><br><br>
+
+      <label for="amount">Valor:</label><br>
+      <input type="number" id="amount" name="amount" required><br><br>
+
+      <label for="type">Tipo:</label><br>
+      <select id="type" name="type" required>
+        <option value="receita">Receita</option>
+        <option value="despesa">Despesa</option>
+        <option value="investimento">Investimento</option>
+      </select><br><br>
+
+      <button type="button" class="add-btn">Adicionar</button>
+    </form>
+
+    <h2>Entradas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Descrição</th>
+          <th>Valor</th>
+          <th>Tipo</th>
+        </tr>
+      </thead>
+      <tbody id="entries"></tbody>
+    </table>
+
+    <h2>Totais</h2>
+    <p class="totals">Total de Receitas: R$ <span id="total-receitas">0</span></p>
+    <p class="totals">Total de Despesas: R$ <span id="total-despesas">0</span></p>
+    <p class="totals">Total de Investimentos: R$ <span id="total-investimentos">0</span></p>
+
+    <div class="result">
+      <p>Saldo Total: R$ <span id="saldo-total">0</span></p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
